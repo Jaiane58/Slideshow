@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ header {
+    padding: 0;
+    margin: 0;
+    background-color: chocolate;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 15px black;
+
+ }
+ header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-top: 8px;
+ }
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50vw;
+    margin-left: 53vh;
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+}
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin-left: 53vh;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+
+}
+
+.item:first-child {
+    margin-left: -100%;
+}
+
+.item img {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.action-button {
+    font: bold 30px sans-serif;
+    z-index: 1;
+    display: flex;
+    width: 50px;
+    color: #00000000;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+@media  (max-width: 480px){
+    .titulo {
+        margin-left: 15px;
+    }
+
+    .titulo h1 {
+        width: 50vh;
+    }
+
+    .titulo p {
+        margin-top: 15px;
+        width: 50vh;
+    }
+
+    .container-slide{
+        margin-left: 15px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .container-items{
+        margin-left: 15px;
+        width: 320px;
+        height: 200px;
+    }
+    .item img {
+        width: 70vh;
+        height: 200px;
+    }
+    .item {
+        width: 320px;
+    }
+    
+
+
+}
